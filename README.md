@@ -3,7 +3,7 @@
 **Knyga:** *Lengvas būdas tapti IT specialistu*  
 **Autorius:** Liudas Jankauskas
 
-Trumpai: be „AI magijos“, be pažadų, kurių niekas netesės. Praktinis, no-bullshit pasakojimas apie realų kelią į IT per testavimą: mitai, istorijos, mąstymas, ir ką daryti po skaitymo.
+Lengvas nereiškia be idėto darbo. Lengvas – nes aiškus. Šita knyga padeda susidėlioti principus, lūkesčius ir realius žingsnius, kad lengvai ir užtikrinti pakeistum profesiją. Tai praktinis, no-bullshit pasakojimas iš vidaus: kas iš tikrųjų yra testavimas, kodėl tai vienas realiausių startų į IT, ir kokius mitus laikas palaidoti.
 
 ---
 
