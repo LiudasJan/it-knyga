@@ -420,3 +420,45 @@ footer{
 @media (prefers-reduced-motion: reduce){
   *{ transition:none !important; scroll-behavior:auto !important; }
 }
+
+/* Globejai */
+.guardians .guardian{
+  text-decoration:none;
+  display:block;
+}
+
+.guardians .guardianRow{
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+}
+
+.guardianLogo{
+  width:84px;
+  height:84px;
+  border-radius:16px;
+  object-fit:contain;
+  padding:10px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  flex:0 0 auto;
+}
+
+.guardianText h3{
+  margin:0 0 6px 0;
+}
+
+.guardianLink{
+  margin-top:10px;
+  font-weight:600;
+  opacity:.9;
+}
+
+.guardians .guardian:hover .guardianLink{
+  opacity:1;
+}
+
+@media (max-width:820px){
+  .guardians .guardianRow{ flex-direction:column; }
+  .guardianLogo{ width:74px; height:74px; }
+}
