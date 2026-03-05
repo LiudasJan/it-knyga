@@ -1,5 +1,5 @@
 // ====== CONFIG ======
-const STRIPE_URL = "https://buy.stripe.com/14A14f9iZ6xzgrP0pn1Jm01";
+const STRIPE_URL = "https://buy.stripe.com/eVq9ALeDj7BDb7v8VT1Jm02";
 const WHATSAPP_URL = "https://wa.me/37064034810";
 const LINKEDIN_URL = "https://www.linkedin.com/in/liudas-jankauskas/";
 // ====================
