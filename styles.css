@@ -589,3 +589,21 @@ footer{
     height: 520px;
   }
 }
+
+
+.preview-open-mobile {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .pdf-preview-shell {
+    display: none;
+  }
+
+  .preview-open-mobile {
+    display: inline-flex;
+  }
+}
