@@ -607,3 +607,61 @@ footer{
     display: inline-flex;
   }
 }
+
+.menuToggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  background: #fff;
+  padding: 0;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menuToggle span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 999px;
+}
+
+.mobileNav {
+  display: none;
+  padding: 12px 0 4px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  margin-top: 12px;
+}
+
+.mobileNav .navlink {
+  display: block;
+  padding: 12px 0;
+}
+
+@media (max-width: 920px) {
+  .desktopNav {
+    display: none;
+  }
+
+  .menuToggle {
+    display: inline-flex;
+  }
+
+  .topbar .row {
+    flex-wrap: wrap;
+  }
+
+  .actions {
+    margin-left: auto;
+  }
+
+  .mobileNav.isOpen {
+    display: block;
+    width: 100%;
+  }
+}

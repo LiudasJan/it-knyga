@@ -69,3 +69,23 @@ function init(){
 }
 
 document.addEventListener("DOMContentLoaded", init);
+
+
+  const menuToggle = document.getElementById("menuToggle");
+  const mobileNav = document.getElementById("mobileNav");
+
+  if (menuToggle && mobileNav) {
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mobileNav.classList.toggle("isOpen");
+      mobileNav.hidden = !isOpen;
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    mobileNav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileNav.classList.remove("isOpen");
+        mobileNav.hidden = true;
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
