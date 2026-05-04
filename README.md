@@ -13,10 +13,6 @@ Lengvas nereiškia be idėto darbo. Lengvas – nes aiškus. Šita knyga padeda 
 
 ---
 
-## Pre-sale
-
-- Pre-sale: dabar €14.99 (rezervacija), po išleidimo €29.99. Knyga bus pristatyta iki 2026-12-31.
-
-- **Rezervuoti dabar:** [Rezervuoti už €14.99](https://buy.stripe.com/eVq9ALeDj7BDb7v8VT1Jm02)
+- **Užsisąkyti:** [Lengvas būdas tapti IT specialistu]("https://buy.stripe.com/aFabIT3YFaNPa3r3Bz1Jm03")
 
 
