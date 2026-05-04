@@ -13,6 +13,6 @@ Lengvas nereiškia be idėto darbo. Lengvas – nes aiškus. Šita knyga padeda 
 
 ---
 
-- **Užsisąkyti:** [Lengvas būdas tapti IT specialistu]("https://buy.stripe.com/aFabIT3YFaNPa3r3Bz1Jm03")
+- **Užsisąkyti:** [Lengvas būdas tapti IT specialistu](https://buy.stripe.com/aFabIT3YFaNPa3r3Bz1Jm03)
 
 
