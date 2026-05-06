@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChatGPT - Your AI Assistant - Microsoft Internet Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="xp-window">
+    <div class="titlebar">
+      <span>ChatGPT - Your AI Assistant - Microsoft Internet Explorer</span>
+      <div class="window-buttons">
+        <button>_</button><button>□</button><button>×</button>
+      </div>
+    </div>
+
+    <div class="menubar">File&nbsp;&nbsp; Edit&nbsp;&nbsp; View&nbsp;&nbsp; Favorites&nbsp;&nbsp; Tools&nbsp;&nbsp; Help</div>
+
+    <div class="toolbar">
+      <button>⬅ Back</button>
+      <button>➡</button>
+      <button>❌</button>
+      <button>🔄</button>
+      <button>🏠</button>
+      <button>🔍 Search</button>
+      <button>⭐ Favorites</button>
+    </div>
+
+    <div class="addressbar">
+      <span>Address</span>
+      <input value="http://www.chatgpt.com/" readonly />
+      <button>Go</button>
+    </div>
+
+    <div class="page">
+      <header class="site-header">
+        <div class="logo">ChatGPT</div>
+        <div class="tagline">Your AI Assistant</div>
+        <nav>
+          <a href="#">Home</a> |
+          <a href="#">Help</a> |
+          <a href="#">Settings</a> |
+          <a href="#">Logout</a>
+        </nav>
+      </header>
+
+      <div class="layout">
+        <aside class="sidebar">
+          <div class="box">
+            <h3>Navigation</h3>
+            <a href="#">📄 New Conversation</a>
+            <a href="#">📁 My Conversations</a>
+            <a href="#">👤 Profile & Settings</a>
+            <a href="#">❓ Help & Support</a>
+          </div>
+
+          <div class="box conversations">
+            <h3>Conversations</h3>
+            <div class="conversation selected">
+              Welcome to ChatGPT<br />
+              <small>Today, 10:15 AM</small>
+            </div>
+            <button class="delete">Delete Selected</button>
+          </div>
+        </aside>
+
+        <main class="chat">
+          <h2>Welcome to ChatGPT</h2>
+
+          <div id="messages" class="messages">
+            <div class="message bot">
+              <div class="avatar">✳</div>
+              <div>
+                <b>ChatGPT</b>
+                <p>Hello! I'm ChatGPT, your AI assistant.<br />How can I help you today?</p>
+              </div>
+              <span class="time">10:15 AM</span>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label>Type your message here:</label>
+            <textarea id="userInput"></textarea>
+            <button id="sendBtn">💬 Send Message</button>
+            <a href="#" id="clearBtn">Clear Conversation</a>
+          </div>
+        </main>
+      </div>
+
+      <footer>
+        © 2005 <a href="#">OpenAI, Inc.</a> All rights reserved.
+        <span>
+          <a href="#">About Us</a> |
+          <a href="#">Privacy Policy</a> |
+          <a href="#">Terms of Use</a>
+        </span>
+      </footer>
+    </div>
+  </div>
+
+  <div class="taskbar">
+    <button class="start">start</button>
+    <div class="task">ChatGPT - Your AI As...</div>
+    <div class="clock">10:16 AM</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
