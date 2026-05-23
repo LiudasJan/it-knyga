@@ -39,11 +39,14 @@ function renderStories() {
   const grid = $("#storiesGrid");
   if (!grid || !STORY_IMAGES.length) return;
 
-  grid.innerHTML = STORY_IMAGES.map((src, index) => `
-    <figure class="story-card">
-      <img src="${src}" alt="Skaitytojo pasidalinimas apie knygą ${index + 1}" loading="lazy" />
-    </figure>
-  `).join("");
+    grid.innerHTML = STORY_IMAGES.map((src, index) => `
+        <a class="story-card"
+          href="https://www.instagram.com/stories/highlights/18075757547528865/"
+          target="_blank">
+
+          <img src="${src}" alt="Skaitytojo pasidalinimas apie knygą ${index + 1}" loading="lazy" />
+        </a>
+    `).join("");
 }
 
 function initMenu() {
