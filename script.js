@@ -1,91 +1,77 @@
-// ====== CONFIG ======
-const STRIPE_URL = "https://buy.stripe.com/eVq9ALeDj7BDb7v8VT1Jm02";
-const WHATSAPP_URL = "https://wa.me/37064034810";
-const LINKEDIN_URL = "https://www.linkedin.com/in/liudas-jankauskas/";
-// ====================
+const LT_STORES = [
+  { name: "Knygos.lt", url: "https://www.knygos.lt/lt/knygos/lengvas-budas-tapti-it-specialistu/" },
+  { name: "Boku.style", url: "https://boku.style/en/products/lengvas-budas-tapti-it-specialistu" },
+  { name: "Pigu.lt", url: "https://pigu.lt/lt/knygos/dalykine-moksline-literatura/enciklopedijos-ir-zinynai/lengvas-budas-tapti-it-specialistu?id=261701797" },
+  { name: "Mano akcija", url: "https://www.manoakcija.lt/akcijos/lengvas-b%C5%ABdas-tapti-it-specialistu" },
+  { name: "Patogu pirkti", url: "https://www.patogupirkti.lt/knyga/lengvas-budas-tapti-it-specialistu.html" },
+  { name: "Pegasas", url: "https://www.pegasas.lt/lengvas-budas-tapti-it-specialistu-22750762/" },
+  { name: "Vaga", url: "https://vaga.lt/lengvas-budas-tapti-it-specialistu" },
+  { name: "Varle.lt", url: "https://www.varle.lt/knygos/knyga-lengvas-budas-tapti-it-specialistu--53900885.html" }
+];
 
-const $ = (q, el=document) => el.querySelector(q);
-const $$ = (q, el=document) => Array.from(el.querySelectorAll(q));
+const STORY_IMAGES = [
+   "stories/story-01.jpg",
+   "stories/story-02.jpg",
+   "stories/story-03.jpg",
+   "stories/story-04.jpg",
+   "stories/story-05.jpg",
+   "stories/story-06.jpg"
+];
 
-function setHref(id, url){
-  const el = document.getElementById(id);
-  if (!el) return;
-  el.href = url;
+const $ = (selector, root = document) => root.querySelector(selector);
+
+function renderStores() {
+  const container = $("#ltStores");
+  if (!container) return;
+
+  container.innerHTML = LT_STORES.map(store => `
+    <a class="store-card" href="${store.url}" target="_blank" rel="noopener">
+      <span>
+        <strong>${store.name}</strong>
+        <small>Pirkti Lietuvoje</small>
+      </span>
+      <em>Atidaryti</em>
+    </a>
+  `).join("");
 }
 
-function initNavHighlight(){
-  const navLinks = $$(".navlink");
-  if (!navLinks.length) return;
+function renderStories() {
+  const grid = $("#storiesGrid");
+  if (!grid || !STORY_IMAGES.length) return;
 
-  const sections = navLinks
-    .map(a => document.querySelector(a.getAttribute("href")))
-    .filter(Boolean);
+    grid.innerHTML = STORY_IMAGES.map((src, index) => `
+        <a class="story-card"
+          href="https://www.instagram.com/stories/highlights/18075757547528865/"
+          target="_blank">
 
-  const observer = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-      if(!entry.isIntersecting) return;
-      const id = "#" + entry.target.id;
-      navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === id));
+          <img src="${src}" alt="Skaitytojo pasidalinimas apie knygą ${index + 1}" loading="lazy" />
+        </a>
+    `).join("");
+}
+
+function initMenu() {
+  const button = $("#menuToggle");
+  const nav = $("#navLinks");
+  if (!button || !nav) return;
+
+  button.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    button.setAttribute("aria-expanded", String(open));
+  });
+
+  nav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("open");
+      button.setAttribute("aria-expanded", "false");
     });
-  }, { threshold: 0.45 });
-
-  sections.forEach(s => observer.observe(s));
+  });
 }
 
-function initSticky(){
-  const sticky = $("#mobileSticky");
-  if (!sticky) return;
+document.addEventListener("DOMContentLoaded", () => {
+  const year = $("#year");
+  if (year) year.textContent = new Date().getFullYear();
 
-  const isMobile = () => window.matchMedia("(max-width: 980px)").matches;
-  const update = () => {
-    sticky.hidden = !isMobile();
-  };
-
-  window.addEventListener("resize", update, { passive: true });
-  update();
-}
-
-function init(){
-  // year
-  const y = $("#year");
-  if (y) y.textContent = new Date().getFullYear();
-
-  // scroll to top
-  $("#scrollTopBtn")?.addEventListener("click", ()=>window.scrollTo({top:0, behavior:"smooth"}));
-
-  // Set all presale buttons to Stripe
-  ["presaleTopBtn","presaleHeroBtn","presaleMidBtn","presaleFaqBtn","presaleStickyBtn"]
-    .forEach(id => setHref(id, STRIPE_URL));
-
-  // Contact links
-  setHref("whatsappBtn", WHATSAPP_URL);
-  setHref("linkedinBtn", LINKEDIN_URL);
-
-  // smooth scroll
-  document.documentElement.style.scrollBehavior = "smooth";
-
-  initNavHighlight();
-  initSticky();
-}
-
-document.addEventListener("DOMContentLoaded", init);
-
-
-  const menuToggle = document.getElementById("menuToggle");
-  const mobileNav = document.getElementById("mobileNav");
-
-  if (menuToggle && mobileNav) {
-    menuToggle.addEventListener("click", () => {
-      const isOpen = mobileNav.classList.toggle("isOpen");
-      mobileNav.hidden = !isOpen;
-      menuToggle.setAttribute("aria-expanded", String(isOpen));
-    });
-
-    mobileNav.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        mobileNav.classList.remove("isOpen");
-        mobileNav.hidden = true;
-        menuToggle.setAttribute("aria-expanded", "false");
-      });
-    });
-  }
+  renderStores();
+  renderStories();
+  initMenu();
+});
