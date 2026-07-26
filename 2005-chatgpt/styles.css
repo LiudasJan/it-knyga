@@ -1,0 +1,299 @@
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  background: #3a6ea5;
+  color: #111;
+  font-size: 14px;
+}
+
+.xp-window {
+  width: 100%;
+  min-height: calc(100vh - 34px);
+  background: #ece9d8;
+  border: 2px solid #0055e5;
+  box-sizing: border-box;
+}
+
+.titlebar {
+  height: 30px;
+  background: linear-gradient(#1f78ff, #0055e5);
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 8px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.window-buttons button {
+  width: 24px;
+  height: 22px;
+  margin-left: 3px;
+  border: 1px solid #fff;
+  background: #dfe8ff;
+  color: #003399;
+  font-weight: bold;
+}
+
+.menubar {
+  padding: 6px 10px;
+  background: #f7f3e7;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.toolbar {
+  padding: 8px 10px;
+  background: #edeadf;
+  border-bottom: 1px solid #bbb;
+}
+
+.toolbar button {
+  margin-right: 6px;
+  padding: 4px 8px;
+  border: 1px solid #aaa;
+  background: linear-gradient(#fff, #ddd);
+}
+
+.addressbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 6px 10px;
+  background: #f4f1e8;
+  border-bottom: 1px solid #aaa;
+}
+
+.addressbar input {
+  flex: 1;
+  height: 22px;
+  border: 1px solid #999;
+  padding: 2px 6px;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.page {
+  background: white;
+  margin: 0;
+  padding: 14px;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #6aa4bd;
+  padding-bottom: 10px;
+  gap: 20px;
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  font-style: italic;
+  color: #1d6f6d;
+  font-weight: bold;
+}
+
+.tagline {
+  color: #666;
+  font-style: italic;
+}
+
+.site-header nav {
+  margin-left: auto;
+}
+
+a {
+  color: #0000cc;
+  text-decoration: underline;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.box {
+  border: 1px solid #8ca7ad;
+  background: #f8f8f8;
+  margin-bottom: 14px;
+}
+
+.box h3,
+.chat h2 {
+  margin: 0;
+  padding: 8px 10px;
+  background: linear-gradient(#dbeadb, #c7dcc7);
+  border-bottom: 1px solid #8ca7ad;
+  font-size: 16px;
+}
+
+.box a {
+  display: block;
+  padding: 8px 12px;
+}
+
+.conversation {
+  margin: 10px;
+  padding: 8px;
+  border: 1px solid #9bb7d9;
+  background: #dce9fb;
+}
+
+.delete {
+  margin: 170px 10px 10px;
+  padding: 6px 12px;
+  border: 1px solid #777;
+  background: #eee;
+}
+
+.chat {
+  border: 1px solid #8ca7ad;
+  background: #fff;
+}
+
+.messages {
+  min-height: 380px;
+}
+
+.message {
+  display: grid;
+  grid-template-columns: 45px 1fr 80px;
+  gap: 12px;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.message b {
+  color: #006600;
+  font-size: 16px;
+}
+
+.message.user b {
+  color: #003399;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #aaa;
+  background: #dce9fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bot .avatar {
+  background: #008033;
+  color: white;
+}
+
+.time {
+  color: #777;
+  text-align: right;
+}
+
+.input-box {
+  background: #f0eee3;
+  border-top: 1px solid #aaa;
+  padding: 12px;
+  position: relative;
+}
+
+.input-box label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+textarea {
+  width: 100%;
+  height: 70px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 14px;
+}
+
+#sendBtn {
+  margin-top: 8px;
+  padding: 6px 14px;
+  border: 1px solid #777;
+  background: linear-gradient(#fff, #ddd);
+  font-weight: bold;
+  color: #003399;
+}
+
+#clearBtn {
+  float: right;
+  margin-top: 14px;
+}
+
+footer {
+  margin-top: 12px;
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+  font-size: 13px;
+  color: #444;
+}
+
+footer span {
+  float: right;
+}
+
+.taskbar {
+  height: 34px;
+  background: linear-gradient(#2d8cff, #0055cc);
+  display: flex;
+  align-items: center;
+  color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.start {
+  height: 34px;
+  width: 110px;
+  background: linear-gradient(#67c443, #168000);
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border: 0;
+  text-align: left;
+  padding-left: 14px;
+  border-radius: 0 12px 12px 0;
+}
+
+.task {
+  margin-left: 8px;
+  background: #1b61c5;
+  border: 1px solid #6aa4ff;
+  padding: 6px 18px;
+}
+
+.clock {
+  margin-left: auto;
+  padding-right: 16px;
+}
+
+@media (max-width: 800px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .site-header {
+    display: block;
+  }
+
+  .site-header nav {
+    margin-top: 10px;
+  }
+}

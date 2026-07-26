@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Knyga apie realų kelią į IT per testavimo mąstymą. Be marketingo. Be pažadų. Su aiškumu." />
+  <meta name="description" content="Liudo Jankausko knyga „Lengvas būdas tapti IT specialistu“. Knyga apie realų kelią į IT, testavimo mąstymą ir profesijos keitimą be pažadų apie stebuklus." />
+  <meta property="og:title" content="Lengvas būdas tapti IT specialistu — Liudas Jankauskas" />
+  <meta property="og:description" content="IT – ne karjeros kryptis. Tai aplinka, kurioje gyvensime." />
+  <meta property="og:image" content="https://itknyga.lt/Liudas-Jankauskas-front-cover.png" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://itknyga.lt/" />
   <title>Lengvas būdas tapti IT specialistu — Liudas Jankauskas</title>
-
   <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TL7S2C4CYR"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -19,409 +23,255 @@
     gtag('config', 'G-TL7S2C4CYR');
   </script>
 
-  <div class="topbar">
-    <div class="wrap">
-      <div class="row">
-        <a class="brand" href="#top" aria-label="IT Knyga">
-          <div class="mark" aria-hidden="true"></div>
-          <div>
-            <b>IT Knyga</b>
-            <span>Lengvas būdas tapti IT specialistu</span>
-          </div>
-        </a>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="IT Knyga">
+        <span class="brand-dot"></span>
+        <span>
+          <strong>IT Knyga</strong>
+          <small>Liudas Jankauskas</small>
+        </span>
+      </a>
 
-        <nav aria-label="Navigacija">
-          <a class="navlink" href="#kas">Kas tai</a>
-          <a class="navlink" href="#kam">Kam skirta</a>
-          <a class="navlink" href="#vidus">Kas viduje</a>
-          <a class="navlink" href="#media">Media</a>
-          <a class="navlink" href="#duk">DUK</a>
-        </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Atidaryti meniu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-        <div class="actions">
-          <a class="btn primary" id="presaleTopBtn" href="https://buy.stripe.com/14A14f9iZ6xzgrP0pn1Jm01" target="_blank" rel="noopener">
-            <span class="dot" aria-hidden="true"></span>
-            <span>Rezervuoti €9.99</span>
-          </a>
-        </div>
-      </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#apie">Apie knygą</a>
+        <a href="#isigyti">Įsigyti</a>
+        <a href="#istrauka">Ištrauka</a>
+        <a href="#atsiliepimai">Skaitytojai</a>
+        <a href="#autorius">Autorius</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
   <main id="top">
-    <!-- HERO -->
-    <header class="hero">
-      <div class="wrap">
-        <div class="hero-grid">
-          <div class="hero-card">
-            <div class="kicker">
-              <span class="pill" aria-hidden="true"></span>
-              Pre-sale · vieta eilėje
-            </div>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Liudas Jankauskas</p>
+          <h1>Lengvas būdas tapti IT specialistu</h1>
+          <p class="lead">Knyga žmonėms, kurie galvoja apie IT, bet nenori pirkti pasakų apie „greitą karjerą“. Apie testavimo mąstymą, profesijos keitimą ir realybę, kuri dažnai lieka už kursų reklamų ribų.</p>
 
-            <h1>Lengvas būdas tapti<br/>IT specialistu</h1>
-
-            <p class="sub">
-              Lengvas nereiškia be idėto darbo. Lengvas – nes aiškus. Šita knyga padeda susidėlioti principus, 
-              lūkesčius ir realius žingsnius, kad lengvai ir užtikrinti pakeistum profesiją. Tai praktinis, no-bullshit 
-              pasakojimas iš vidaus: kas iš tikrųjų yra testavimas, kodėl tai vienas realiausių startų į IT, ir kokius mitus laikas palaidoti.
-            </p>
-
-            <div class="hero-ctas">
-              <a class="btn primary" id="presaleHeroBtn" href="https://buy.stripe.com/14A14f9iZ6xzgrP0pn1Jm01" target="_blank" rel="noopener">
-                <span class="dot" aria-hidden="true"></span>
-                <span>Rezervuoti €9.99</span>
-              </a>
-
-              <a class="btn" href="#vidus">
-                <span>Kas viduje</span>
-              </a>
-            </div>
-
-            <div class="micro">
-              <b>Dabar:</b> €9.99 (rezervacija) · <b>vėliau:</b> €29.99.
-              <span class="muted">Pristatymas planuojamas 2026 m. (ankstyva prieiga prieš viešą platinimą).</span>
-            </div>
-
-            <div class="hero-strip" id="autorius">
-              <div class="stripTitle">Autorius</div>
-              <div class="stripBody">
-                <b>Liudas Jankauskas</b> · beveik 20 metų testavime  · QA Lead Abu Dabyje<br/>
-                  Kūriau ir vedžiau mokymus žmonėms, kurie persikvalifikavo.
-                  Šita knyga – tas pats mąstymas, tik knygos formatu.
-              </div>
-              <div class="stripLinks">
-                <a class="chip" href="https://www.delfi.lt/login/technologijos/naujienos/patyre-testuotojai-tampa-it-verslo-prestizu-90089187" target="_blank" rel="noopener">Delfi.lt</a>
-                <a class="chip" href="https://www.lrytas.lt/it/ismanyk/2022/01/12/news/patyre-kokybes-uztikrinimo-specialistai-retesni-uz-vienaragius-22039677" target="_blank" rel="noopener">lrytas.lt</a>
-                <a class="chip" href="https://www.15min.lt/verslas/naujiena/mokslas-it/profesija-paklausa-aplenkusi-programuotojus-lietuvoje-uzdirba-ir-3-5-tukst-euru-i-rankas-1290-1632904" target="_blank" rel="noopener">15min.lt</a>
-                <a class="chip" href="https://www.linkedin.com/in/liudas-jankauskas/" target="_blank" rel="noopener">LinkedIn</a>
-                <a class="chip" href="https://qaontime.com" target="_blank" rel="noopener">QA on Time</a>
-                <a class="chip" href="https://rentgen.io" target="_blank" rel="noopener">Rentgen</a>
-              </div>
-            </div>
+          <div class="hero-actions">
+            <a class="button primary" href="#isigyti">Kur įsigyti</a>
+            <a class="button secondary" href="#istrauka">Skaityti ištrauką</a>
           </div>
 
-          <!-- COVER -->
-          <div class="cover-card" aria-label="Knygos viršelis">
-            <img class="cover" src="./cover.jpg" alt="Knygos viršelis: Lengvas būdas tapti IT specialistu" />
-            <div class="coverNote">
-              „Noriu į IT“ yra normalu. „Noriu paprasto kelio“ — marketingas. Čia apie lengvą kelią: kuriam reikia pastangu, bet ne mistikos.
-            </div>
+          <div class="trust-row" aria-label="Pasitikėjimo ženklai">
+            <a href="#media">Delfi</a>
+            <a href="#media">15min</a>
+            <a href="#media">lrytas.lt</a>
+            <a href="#goodreads">Goodreads</a>
+            <a href="#isigyti">Amazon</a>
           </div>
         </div>
+
+        <div class="hero-cover">
+          <img src="./Liudas-Jankauskas-front-cover.png" alt="Knygos „Lengvas būdas tapti IT specialistu“ viršelis" />
+        </div>
       </div>
-    </header>
+    </section>
 
-    <!-- KAS -->
-    <section id="kas">
+    <section id="apie" class="section">
+      <div class="wrap two-col">
+        <div>
+          <p class="section-kicker">Apie knygą</p>
+          <h2>Ne pažadas. Ne kursas. Normalus paaiškinimas, kas yra IT kelias iš vidaus.</h2>
+        </div>
+        <div class="text-block">
+          <p>Ši knyga parašyta žmogui, kuris svarsto keisti profesiją, bet dar nežino, nuo ko pradėti. Joje nėra pažado, kad po trijų mėnesių gyvenimas pasikeis. Yra aiškumas, kaip atrodo IT darbas, kodėl testavimas gali būti realus startas ir kokius mitus verta išmesti dar prieš perkant kursus.</p>
+          <p>Testavimas čia nėra pristatomas kaip atsarginis kelias tiems, kuriems nepavyko programuoti. Tai mąstymo būdas: klausti, tikrinti, abejoti, ieškoti rizikos ir suprasti, kaip veikia sistemos.</p>
+        </div>
+      </div>
+
+      <div class="wrap cards">
+        <article class="card">
+          <h3>Kas galvoja apie IT</h3>
+          <p>Jei nori persikvalifikuoti, bet nenori pradėti nuo atsitiktinių patarimų ir gražių pažadų.</p>
+        </article>
+        <article class="card">
+          <h3>Kam įdomus QA kelias</h3>
+          <p>Jei nori suprasti, kas iš tikrųjų yra testavimas ir kodėl tai nėra „tiesiog spaudyti mygtukus“.</p>
+        </article>
+        <article class="card">
+          <h3>Kas jau dirba IT</h3>
+          <p>Jei nori geriau suprasti testavimo mąstymą, rizikas ir tai, kodėl kokybė nėra vien QA problema.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="isigyti" class="section buy-section">
       <div class="wrap">
-        <div class="section-card">
-          <div class="section-title">
-            <h2>Kas tai</h2>
-            <div class="hint">Trumpa orientacija be triukšmo. Kad žinotum, kur eini.</div>
+        <div class="section-head centered">
+          <p class="section-kicker">Kur įsigyti</p>
+          <h2>Knygą galima nusipirkti Lietuvoje ir užsienyje</h2>
+          <p>Pasirink patogiausią pardavėją. Lietuvoje — knygynai ir e. parduotuvės. Užsienyje — Amazon.</p>
+        </div>
+
+        <div class="buy-layout">
+          <div class="buy-panel">
+            <h3>Lietuvoje</h3>
+            <div class="store-list" id="ltStores"></div>
           </div>
 
-          <div class="grid3">
-            <div class="item">
-              <div class="tag">✅ Tikslas</div>
-              <h3>Aiškumas vietoj iliuzijų</h3>
-              <p>Ką reiškia IT darbas realybėje, kokie lūkesčiai, kas skauda, ir kur dažniausiai žmonės sudega.</p>
-            </div>
+          <div class="buy-panel featured">
+            <h3>Užsienyje</h3>
+            <p class="muted">Amazon skirtas lietuviams, gyvenantiems ne Lietuvoje.</p>
+            <a class="store-card amazon" id="amazonLink" href="https://www.amazon.com/s?k=Lengvas+b%C5%ABdas+tapti+IT+specialistu+Liudas+Jankauskas" target="_blank" rel="noopener">
+              <span>
+                <strong>Amazon</strong>
+                <small>UK, Airija, Norvegija, Vokietija, JAV ir kitos šalys</small>
+              </span>
+              <em>Atidaryti</em>
+            </a>
 
-            <div class="item">
-              <div class="tag">🧠 Mąstymas</div>
-              <h3>Testuotojo kampas</h3>
-              <p>Hipotezės, rizikos, „kas nutiks blogiausiu atveju“ – mąstymas, kuris veikia bet kurioje komandoje.</p>
-            </div>
-
-            <div class="item">
-              <div class="tag">🧭 Kryptis</div>
-              <h3>Starto žemėlapis</h3>
-              <p>Nuo „nieko nesuprantu“ iki pirmų realių veiksmų: ką mokytis, ko NEdaryti, ir ką ignoruoti.</p>
-            </div>
-          </div>
-
-          <div class="spacer"></div>
-
-          <div class="callout">
-            <div class="icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M12 3l9 4.5v9L12 21 3 16.5v-9L12 3Z" stroke="currentColor" stroke-width="1.7"/>
-                <path d="M12 7v10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-                <path d="M8.5 10.5h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div>
-              <b>Čia ne 3 savaičių kursas</b>
-              <span>Čia knyga keičianti mąstymą, tai apie realybę: ką treniruoti, ką suprasti, ir kaip nepradėti nuo klaidingo plano.</span>
+            <div class="direct-box">
+              <h4>Tiesiogiai iš autoriaus</h4>
+              <p>Kai yra likutis, knygą galima įsigyti ir tiesiogiai per itknyga.lt.</p>
+              <a class="button primary full" href="https://buy.stripe.com/aFabIT3YFaNPa3r3Bz1Jm03" target="_blank" rel="noopener">Pirkti tiesiogiai</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- KAM -->
-    <section id="kam">
+    <section id="goodreads" class="section compact">
+      <div class="wrap goodreads">
+        <div>
+          <p class="section-kicker">Goodreads</p>
+          <h2>Atsiliepimai ir įvertinimai</h2>
+          <p>Palik savo įvertinimą Goodreads platformoje.</p>
+        </div>
+        <a class="button secondary" href="https://www.goodreads.com/book/show/252068916-lengvas-b-das-tapti-it-specialistu" target="_blank" rel="noopener">Goodreads</a>
+      </div>
+    </section>
+
+    <section id="istrauka" class="section preview-section">
+      <div class="wrap two-col">
+        <div>
+          <p class="section-kicker">Ištrauka</p>
+          <h2>Pasižiūrėk pirmus puslapius prieš pirkdamas</h2>
+        </div>
+        <div class="text-block">
+          <p>Čia gali peržiūrėti knygos pradžią: turinį, pratarmę ir įvadinius puslapius. Pakanka suprasti toną, struktūrą ir ar ši knyga tau tinka. Jei ne – viskas gerai. Nėra knygų, kurios tinka visiems.</p>
+          <a class="button secondary" href="./preview.pdf" target="_blank" rel="noopener">Atidaryti PDF</a>
+        </div>
+      </div>
+
       <div class="wrap">
-        <div class="section-card">
-          <div class="section-title">
-            <h2>Kam skirta</h2>
-            <div class="hint">Pirmiausia – persikvalifikavimui. Kitiems – kaip papildomas kampas.</div>
-          </div>
-
-          <div class="grid2">
-            <div class="item">
-              <div class="tag">🔁 Persikvalifikuojantiems</div>
-              <h3>Jei nori į IT, bet nenori meluoti sau</h3>
-              <p>„Noriu į IT“ yra normalu. „Noriu paprasto kelio“ — marketingas. Čia apie lengvą kelią: kuriam reikia pastangu, bet ne mistikos.</p>
-            </div>
-
-            <div class="item">
-              <div class="tag">🧪 Smalsiems</div>
-              <h3>Tiem, kuriems patinka ieškoti, kas neveikia</h3>
-              <p>Jei tau įdomu „kur sistema sulūš“ — tai testavimo mąstymas. Ir jis mokomas. Ne gimsta.</p>
-            </div>
-
-            <div class="item">
-              <div class="tag">👩‍💻 IT profesionalams</div>
-              <h3>Developer’iams, PO, PM, architektams</h3>
-              <p>Šita knyga neskirta tavęs mokyti testuoti. Ji skirta duoti papildomą kampą: kaip QA mato riziką, kodėl greitis 
-                be kokybės yra skola, ir kaip atpažinti, kur komanda pati save apgaudinėja. Tiesiog suprasti kokybę.</p>
-            </div>
-
-            <div class="item">
-              <div class="tag">⚠️ Skeptikams</div>
-              <h3>Tiem, kuriems atsibodo „AI viską pakeis“</h3>
-              <p>Testavimas nėra scriptas. Tai galvosūkis. AI gali padėti, bet mąstymas vis tiek tavo. Ir atsakomybė — irgi.</p>
-            </div>
-          </div>
-
-          <div class="spacer"></div>
-
-          <div class="hero-ctas inlineCtas">
-            <a class="btn primary" id="presaleMidBtn" href="https://buy.stripe.com/14A14f9iZ6xzgrP0pn1Jm01" target="_blank" rel="noopener">
-              <span class="dot" aria-hidden="true"></span>
-              <span>Rezervuoti €9.99</span>
-            </a>
-            <a class="btn" href="#duk"><span>DUK</span></a>
-          </div>
+        <div class="pdf-frame">
+          <iframe src="./preview.pdf#toolbar=0" title="Knygos ištrauka"></iframe>
         </div>
       </div>
     </section>
 
-    <!-- VIDUS -->
-    <section id="vidus">
+    <section id="atsiliepimai" class="section">
       <div class="wrap">
-        <div class="section-card">
-          <div class="section-title">
-            <h2>Kas viduje</h2>
-            <div class="hint">Mitai + istorijos + testavimo mąstymas + praktinis žemėlapis.</div>
-          </div>
-
-          <div class="grid3">
-            <div class="item">
-              <div class="tag">🧨 Mitai</div>
-              <h3>„QA tik spaudo mygtukus“</h3>
-              <p>Ne. QA yra pirmas klientas + kritikas. Ir žmogus, kuris sutaupo pinigus prieš incidentą.</p>
-            </div>
-
-            <div class="item">
-              <div class="tag">🧭 Keliai</div>
-              <h3>Testuotojų istorijos</h3>
-              <p>Normalūs žmonės. Normalūs sprendimai. Normalios klaidos. Be „sėkmės pasakų“ teatro.</p>
-            </div>
-
-            <div class="item">
-              <div class="tag">🛠️ Mąstymas</div>
-              <h3>Kaip galvoti kaip QA</h3>
-              <p>Hipotezės, rizikos, „blogiausi scenarijai“, komunikacija su devais ir vadovais.</p>
-            </div>
-
-            <div class="item">
-              <div class="tag">📉 Realybė</div>
-              <h3>Kas bus sunku</h3>
-              <p>Bus sunku. Bet daug lengviau, kai matai žemėlapį ir negauni marketingo miglos.</p>
-            </div>
-
-            <div class="item">
-              <div class="tag">🧠 Skyrius</div>
-              <h3>Viskas bus automatizuota</h3>
-              <p>Kodėl šitas mitas gyvas nuo Selenium RC laikų — ir kodėl realybė kitokia.</p>
-            </div>
-
-            <div class="item">
-              <div class="tag">📌 Instrukcijos</div>
-              <h3>Ką daryti po skaitymo</h3>
-              <p>Atmintinė: pirmi žingsniai, ritmas, praktika, bendruomenė, planas.</p>
-            </div>
-          </div>
+        <div class="section-head centered">
+          <p class="section-kicker">Skaitytojai</p>
+          <h2>Knyga jau keliauja per žmones</h2>
+          <p>Skaitytojų pasidalinimai.</p>
         </div>
+
+        <div class="stories-grid" id="storiesGrid">
+          <div class="story-placeholder">story-01.jpg</div>
+          <div class="story-placeholder">story-02.jpg</div>
+          <div class="story-placeholder">story-03.jpg</div>
+          <div class="story-placeholder">story-04.jpg</div>
+        </div>
+
+        <p class="helper"><a href="https://www.instagram.com/liudasjan/" target="_blank" rel="noopener">Instagram</a></p>
       </div>
     </section>
 
-    <!-- MEDIA -->
-    <section id="media">
+    <section id="media" class="section media-section">
       <div class="wrap">
-        <div class="section-card">
-          <div class="section-title">
-            <h2>Media</h2>
-            <div class="hint">Publikacijos apie QA ir rinkos poreikį.</div>
-          </div>
-
-          <div class="grid3">
-            <a class="item" href="https://www.delfi.lt/login/technologijos/naujienos/patyre-testuotojai-tampa-it-verslo-prestizu-90089187" target="_blank" rel="noopener">
-              <div class="tag">Delfi</div>
-              <h3>Patyrę testuotojai tampa IT verslo prestižu</h3>
-              <p>Apie QA poreikį ir realybę rinkoje.</p>
-            </a>
-
-            <a class="item" href="https://www.delfi.lt/m360/naujausi-straipsniai/karolis-rimkus-ka-verta-sekti-linkedin-100-aktyviu-lietuviu-9-dalis-95344121" target="_blank" rel="noopener">
-              <div class="tag">Delfi</div>
-              <h3>Ką verta sekti „LinkedIn“? 100 aktyvių lietuvių</h3>
-              <p>Apie profesionalų turinį ir auditoriją.</p>
-            </a>
-
-            <a class="item" href="https://www.15min.lt/verslas/naujiena/mokslas-it/profesija-paklausa-aplenkusi-programuotojus-lietuvoje-uzdirba-ir-3-5-tukst-euru-i-rankas-1290-1632904" target="_blank" rel="noopener">
-              <div class="tag">15min</div>
-              <h3>Paklausa aplenkusi programuotojus</h3>
-              <p>Apie QA kaip realią, paklausią kryptį.</p>
-            </a>
-
-            <a class="item" href="https://www.lrytas.lt/it/ismanyk/2022/01/12/news/patyre-kokybes-uztikrinimo-specialistai-retesni-uz-vienaragius-22039677" target="_blank" rel="noopener">
-              <div class="tag">Lrytas</div>
-              <h3>QA retesni už vienaragius</h3>
-              <p>Apie kokybės kainą ir rinkos deficitą.</p>
-            </a>
-          </div>
+        <div class="section-head centered">
+          <p class="section-kicker">Media</p>
+          <h2>Publikacijos ir kontekstas</h2>
+          <p>Nuorodos į publikacijas apie QA, IT rinką ir autoriaus veiklą. Tai nėra knygos reklaminiai tekstai — tai platesnis profesinis kontekstas.</p>
         </div>
-      </div>
-    </section>
 
-    <!-- FAQ -->
-    <section id="duk">
-      <div class="wrap">
-        <div class="section-card">
-          <div class="section-title">
-            <h2>DUK</h2>
-            <div class="hint">Trumpai ir aiškiai.</div>
-          </div>
-
-          <details>
-            <summary>
-              Ar gausiu PDF iškart?
-              <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </summary>
-            <p>Ne. Tai pre-sale rezervacija (vieta eilėje). Gausite fizinę knygą pirmi per 2026 metus.</p>
-          </details>
-
-          <details>
-            <summary>
-              Kodėl dabar €9.99, o vėliau €29.99?
-              <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </summary>
-            <p>€9.99 – ankstyva rezervacija. Išleidus, kaina bus €29.99.</p>
-          </details>
-
-          <details>
-            <summary>
-              Ar knyga tik pradedantiesiems?
-              <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </summary>
-            <p>Ne. Pagrindas – startas į IT, bet profesionalams tai papildomas kampas apie riziką, kokybės skolą ir realias klaidas.</p>
-          </details>
-
-          <div class="spacer"></div>
-
-          <a class="btn primary" id="presaleFaqBtn" href="https://buy.stripe.com/14A14f9iZ6xzgrP0pn1Jm01" target="_blank" rel="noopener">
-            <span class="dot" aria-hidden="true"></span>
-            <span>Rezervuoti €9.99</span>
+        <div class="media-grid">
+          <a class="media-card" href="https://www.delfi.lt/login/technologijos/naujienos/patyre-testuotojai-tampa-it-verslo-prestizu-90089187" target="_blank" rel="noopener">
+            <span>Delfi</span>
+            <strong>Patyrę testuotojai tampa IT verslo prestižu</strong>
+          </a>
+          <a class="media-card" href="https://www.delfi.lt/m360/naujausi-straipsniai/karolis-rimkus-ka-verta-sekti-linkedin-100-aktyviu-lietuviu-9-dalis-95344121" target="_blank" rel="noopener">
+            <span>Delfi</span>
+            <strong>Ką verta sekti „LinkedIn“?</strong>
+          </a>
+          <a class="media-card" href="https://www.15min.lt/verslas/naujiena/mokslas-it/profesija-paklausa-aplenkusi-programuotojus-lietuvoje-uzdirba-ir-3-5-tukst-euru-i-rankas-1290-1632904" target="_blank" rel="noopener">
+            <span>15min</span>
+            <strong>Profesija, kurios paklausa auga</strong>
+          </a>
+          <a class="media-card" href="https://www.lrytas.lt/it/ismanyk/2022/01/12/news/patyre-kokybes-uztikrinimo-specialistai-retesni-uz-vienaragius-22039677" target="_blank" rel="noopener">
+            <span>lrytas.lt</span>
+            <strong>Kokybės užtikrinimo specialistai</strong>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="kontaktas">
+    <section id="autorius" class="section author-section">
+      <div class="wrap author-card">
+        <div>
+          <p class="section-kicker">Autorius</p>
+          <h2>Liudas Jankauskas</h2>
+          <p>Programinės įrangos testavimo specialistas, QA Lead ir autorius. Beveik du dešimtmečius dirba su programinės įrangos kokybe, moko testavimo ir rašo apie IT.</p>
+          <div class="author-links">
+            <a href="https://www.linkedin.com/in/liudas-jankauskas/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://qaontime.com" target="_blank" rel="noopener">QA on Time</a>
+            <a href="https://rentgen.io" target="_blank" rel="noopener">Rentgen</a>
+          </div>
+        </div>
+        <blockquote>
+          „Lengvas“ nereiškia be darbo. Lengvas — nes aiškus.
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="duk" class="section faq-section">
       <div class="wrap">
-        <div class="section-card">
-          <div class="section-title">
-            <h2>Kontaktai</h2>
-            <div class="hint">Trumpas klausimas → greitas atsakymas. Be pardavimų teatro.</div>
-          </div>
+        <div class="section-head centered">
+          <p class="section-kicker">DUK</p>
+          <h2>Trumpi atsakymai</h2>
+        </div>
 
-          <div class="grid3">
-            <div class="item">
-              <div class="tag">WhatsApp</div>
-              <h3>Greitas klausimas</h3>
-              <p>Trumpai. Tiesiai. Atsakysiu kaip žmogus.</p>
-              <div class="miniSpacer"></div>
-              <a class="btn primary" id="whatsappBtn" href="https://wa.me/37064034810" target="_blank" rel="noopener">
-                <span class="dot" aria-hidden="true"></span>
-                <span>Atidaryti WhatsApp</span>
-              </a>
-            </div>
-
-            <div class="item">
-              <div class="tag">LinkedIn</div>
-              <h3>Pasekti / parašyti</h3>
-              <p>Jei nori pirma pasižiūrėti turinį — ok.</p>
-              <div class="miniSpacer"></div>
-              <a class="btn" id="linkedinBtn" href="https://www.linkedin.com/in/liudas-jankauskas/" target="_blank" rel="noopener">
-                <span>Atidaryti LinkedIn</span>
-              </a>
-            </div>
-
-            <div class="item">
-              <div class="tag">El. paštas</div>
-              <h3>Ilgesnis kontekstas</h3>
-              <p>Beta skaitytojai, klausimai dėl knygos, partnerystės.</p>
-              <div class="miniSpacer"></div>
-              <a class="btn primary" href="mailto:liudasjan@gmail.com?subject=Knyga%20%E2%80%9ELengvas%20b%C5%ABdas%20tapti%20IT%20specialistu%E2%80%9C">
-                <span class="dot" aria-hidden="true"></span>
-                <span>Parašyti el. paštu</span>
-              </a>
-            </div>
-          </div>
+        <div class="faq-list">
+          <details>
+            <summary>Ar ši knyga yra apie programavimą?</summary>
+            <p>Ne. Ji apie kelią į IT, testavimo mąstymą ir realybę, su kuria susiduria žmonės, norintys pradėti arba persikvalifikuoti.</p>
+          </details>
+          <details>
+            <summary>Ar ji tinka žmogui be IT patirties?</summary>
+            <p>Taip. Knyga būtent ir rašyta žmogui, kuris dar nėra IT viduje, bet nori suprasti, nuo ko pradėti ir ko tikėtis.</p>
+          </details>
+          <details>
+            <summary>Ar tai QA vadovėlis?</summary>
+            <p>Ne. Tai ne techninis vadovėlis ir ne sertifikato konspektas. Tai knyga apie mąstymą, mitus, profesijos pasirinkimą ir realias istorijas.</p>
+          </details>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap">
-      <div class="footrow">
-        <div>
-          <div class="footTitle">© <span id="year"></span> itknyga.lt — Liudas Jankauskas</div>
-          <div style="margin-top:6px;">Lengvas būdas tapti IT specialistu</div>
-        </div>
-        <div class="links" aria-label="Nuorodos">
-          <a class="link" href="https://qaontime.com" target="_blank" rel="noopener">QAonTime</a>
-          <a class="link" href="https://rentgen.io" target="_blank" rel="noopener">Rentgen</a>
-          <button class="link" type="button" id="scrollTopBtn">Į viršų</button>
-        </div>
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <strong>IT Knyga</strong>
+        <p>© <span id="year"></span> Liudas Jankauskas</p>
+      </div>
+      <div class="footer-links">
+        <a href="./kaip-isleisti-knyga.html">Kaip išleisti knygą</a>
+        <a href="./preview.pdf" target="_blank" rel="noopener">Ištrauka PDF</a>
+        <a href="https://www.linkedin.com/in/liudas-jankauskas/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </footer>
-
-  <!-- Mobile sticky presale -->
-  <div class="mobileSticky" id="mobileSticky" hidden>
-    <div class="mobileStickyInner">
-      <div class="msText">
-        <div class="msTitle">Pre-sale</div>
-        <div class="msSub">€9.99 dabar · €29.99 po išleidimo</div>
-      </div>
-      <a class="btn primary msBtn" id="presaleStickyBtn" href="https://buy.stripe.com/14A14f9iZ6xzgrP0pn1Jm01" target="_blank" rel="noopener">
-        <span class="dot" aria-hidden="true"></span>
-        <span>Rezervuoti</span>
-      </a>
-    </div>
-  </div>
 
   <script src="./script.js"></script>
 </body>
