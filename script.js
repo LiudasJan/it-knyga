@@ -1,6 +1,6 @@
 const LT_STORES = [
   { name: "Knygos.lt", url: "https://www.knygos.lt/lt/knygos/lengvas-budas-tapti-it-specialistu/" },
-  { name: "Boku.style", url: "https://boku.style/en/products/lengvas-budas-tapti-it-specialistu" },
+  { name: "Boku.lt", url: "https://boku.lt/en/products/lengvas-budas-tapti-it-specialistu" },
   { name: "Pigu.lt", url: "https://pigu.lt/lt/knygos/dalykine-moksline-literatura/enciklopedijos-ir-zinynai/lengvas-budas-tapti-it-specialistu?id=261701797" },
   { name: "Mano akcija", url: "https://www.manoakcija.lt/akcijos/lengvas-b%C5%ABdas-tapti-it-specialistu" },
   { name: "Patogu pirkti", url: "https://www.patogupirkti.lt/knyga/lengvas-budas-tapti-it-specialistu.html" },
