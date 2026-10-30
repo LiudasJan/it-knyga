@@ -8,9 +8,10 @@
 
   <link rel="canonical" href="https://itknyga.lt/kaip-isleisti-knyga.html" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="kaip-isleisti-knyga.css" />
 </head>
 
-<body>
+<body class="guide-page">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TL7S2C4CYR"></script>
   <script>
@@ -51,7 +52,7 @@
           <a class="navlink" href="./index.html#kam">Kam skirta</a>
           <a class="navlink" href="./index.html#vidus">Kas viduje</a>
           <a class="navlink" href="./index.html#media">Media</a>
-          <a class="navlink" href="./index.html#du">DUK</a>
+          <a class="navlink" href="./index.html#duk">DUK</a>
           <a class="navlink" href="./kaip-isleisti-knyga.html">Kaip išleisti knygą</a>
         </div>
 
@@ -525,6 +526,21 @@
     if (scrollTopBtn) {
       scrollTopBtn.addEventListener("click", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileNav = document.getElementById("mobileNav");
+    if (menuToggle && mobileNav) {
+      menuToggle.addEventListener("click", () => {
+        mobileNav.hidden = !mobileNav.hidden;
+        menuToggle.setAttribute("aria-expanded", String(!mobileNav.hidden));
+      });
+      mobileNav.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+          mobileNav.hidden = true;
+          menuToggle.setAttribute("aria-expanded", "false");
+        });
       });
     }
   </script>
